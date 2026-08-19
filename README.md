@@ -139,7 +139,7 @@ Key transformations included:
 
 ## Currency Normalization
 
-The original `price` field represents prices in each market's local currency.
+The original "price" field represents prices in each market's local currency.
 
 To enable meaningful cross-city comparisons, prices were normalized into USD using a fixed historical exchange-rate reference date.
 
@@ -149,16 +149,16 @@ The original local-currency price was retained to preserve source-data traceabil
 
 The Power BI model follows a simplified star-schema structure:
 
-- `Listings` — listing and host-level attributes
-- `Reviews` — review-level activity fact table
-- `Date` — calendar dimension for time analysis
-- `Measures` — centralized DAX measure table
+- Listings — listing and host-level attributes
+- Reviews — review-level activity fact table
+- Date — calendar dimension for time analysis
+- Measures — centralized DAX measure table
 
 Relationship structure:
 
-`Listings (1) → Reviews (*)`
+Listings (1) → Reviews (*)
 
-`Date (1) → Reviews (*)`
+Date (1) → Reviews (*)
 
 ## Limitations
 

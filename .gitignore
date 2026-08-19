@@ -1,0 +1,11 @@
+# Raw datasets
+data/Listings.csv
+data/Reviews.csv
+
+# Power BI temporary files
+*.tmp
+~$*.pbix
+
+# OS files
+.DS_Store
+Thumbs.db
